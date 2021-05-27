@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <div class="inner">
+    <p>Let us know how  we can improve freeCodeCamp</p>
+    <form class="" action="index.html" method="post">
+      <!--Name-->
+      <label for="name" class="main-label">* Name:</label>
+      <input type="text" name="name" value="" id="name" placeholder="Enter your name" class="main-input text" required><br>
+
+      <!--Email-->
+      <label for="email" class="main-label">* Email:</label>
+      <input type="email" name="" value="" id="email" placeholder="Enter your email" class="main-input text" required><br>
+
+      <!--Age-->
+      <label for="age" class="main-label">* Age:</label>
+      <input type="number" name="" value="" id="age" placeholder="Age" class="main-input text" required><br>
+
+      <!--Current Role-->
+      <label for="role-select" class="main-label">Which option best describes your current role?</label>
+      <select name="role" id="role-select" class="main-input" >
+        <option value="student">Student</option>
+        <option value="working professional">Working Professional</option>
+        <option value="others">Others</option>
+      </select>
+      <br>
+
+      <!--Recommendation-->
+      <label class="main-label">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+      <input type="radio" name="recommend" value="definitely" id="definitely" class="radio" checked>
+      <label for="definitely" class="values">Definitely</label><br>
+      <input type="radio" name="recommend" value="maybe" id="maybe" class="radio">
+      <label for="maybe" class="values">Maybe</label><br>
+      <input type="radio" name="recommend" value="not sure" id="not sure" class="radio">
+      <label for="not sure" class="values">Not Sure</label><br>
+
+      <!--Like in FCC-->
+      <label for="fcc-select" class="main-label">What do you like most in FCC:</label>
+      <select name="fcc" id="fcc-select" class="main-input">
+        <option value="">Select an option</option>
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+      </select>
+      <br>
+
+      <!--Improvement in Future-->
+      <label class="main-label">Things that should be improved in the future(Check all that apply): </label>
+      <input type="checkbox" name="front-end projects" value="front-end projects" id="front-end projects" class="radio">
+      <label for="front-end projects" class="values">Front-end Projects</label><br>
+      <input type="checkbox" name="back-end projects" value="back-end projects" id="back-end projects" class="radio">
+      <label for="back-end projects" class="values">Back-end Projects</label><br>
+      <input type="checkbox" name="data visualization" value="data visualization" id="data visualization" class="radio">
+      <label for="data visualization" class="values">Data Visulaization</label><br>
+
+      <input type="button" name="SUBMIT" value="SUBMIT" class="btn">
+    </form>
+    </div>
+
+  </body>
+</html>
